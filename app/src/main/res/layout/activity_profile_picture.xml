@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".ProfilePicture">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/iv_profile_picture_display"
+        android:src="@drawable/blank_picture"
+        android:layout_centerInParent="true"
+        android:id="@+id/ivPicturePreview"/>
+
+    <Button
+        android:id="@+id/btnSelectProfilePicture"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/ivPicturePreview"
+        android:layout_alignBottom="@+id/ivPicturePreview"
+        android:contentDescription="@android:string/emptyPhoneNumber" />
+
+    <Button
+        android:id="@+id/btnSaveProfilePicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/btn_save_profile_picture"
+        android:layout_below="@+id/ivPicturePreview"/>
+
+    <Button
+        android:id="@+id/btnCancelProfilePicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/btn_cancel"
+        android:layout_below="@+id/btnSaveProfilePicture"/>
+
+</RelativeLayout>

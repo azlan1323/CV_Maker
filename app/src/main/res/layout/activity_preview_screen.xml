@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    android:orientation="vertical"
+    tools:context=".PreviewScreen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:id="@+id/tvPersonalDetails"
+        android:background="@color/white"
+        android:hint="@string/tv_personal_details"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSummary"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:hint="@string/tv_summary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEducation"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:hint="@string/tv_education"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvExperience"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:hint="@string/tv_experience"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvReferences"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:hint="@string/tv_references"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCertifications"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:hint="@string/tv_certifications"/>
+
+</LinearLayout>

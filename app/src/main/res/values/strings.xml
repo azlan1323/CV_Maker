@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">CvMaker</string>
+    <string name="btn_profile_picture">Profile Picture</string>
+    <string name="btn_personal_details">Personal Details</string>
+    <string name="btn_summary">Summary</string>
+    <string name="btn_education">Education</string>
+    <string name="btn_experience">Experience</string>
+    <string name="btn_certifications">Certifications</string>
+    <string name="btn_references">References</string>
+    <string name="iv_profile_picture_display">ProfilePictureDisplay</string>
+    <string name="btn_save_profile_picture">Save Profile Picture</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="et_enter_education_details">Enter Education Details</string>
+    <string name="btn_save_details">Save Details</string>
+    <string name="btn_enter_experience_details">Enter Experience Details</string>
+    <string name="btn_enter_personal_details">Enter Personal Details</string>
+    <string name="btn_enter_references">Enter References</string>
+    <string name="btn_enter_summary">Enter Summary</string>
+    <string name="btn_enter_certifications">Enter Certifications</string>
+    <string name="btn_preview_screen">Preview Screen</string>
+    <string name="tv_summary">Summary</string>
+    <string name="tv_education">Education</string>
+    <string name="tv_personal_details">Personal Details</string>
+    <string name="tv_experience">Experience</string>
+    <string name="tv_certifications">Certifications</string>
+    <string name="tv_references">References</string>
+</resources>
