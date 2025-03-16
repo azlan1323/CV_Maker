@@ -22,7 +22,8 @@ public class HomeScreen extends AppCompatActivity {
     ActivityResultLauncher<Intent> profilePictureLauncher, personalDetailsLauncher, summaryLauncher, educationLauncher;
     ActivityResultLauncher<Intent> experienceLauncher, certificationsLauncher, referencesLauncher;
 
-    String experience, summary, personalDetails, education, references, certifications;
+    String experience, summary, education, references, certifications;
+    String[] personalDetails;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +70,6 @@ public class HomeScreen extends AppCompatActivity {
             }
             if (personalDetails != null){
                 intent.putExtra("PersonalDetails", personalDetails);
-                Log.d("PersonalDetails", personalDetails);
             }
 
             startActivity(intent);
@@ -174,7 +174,7 @@ public class HomeScreen extends AppCompatActivity {
                     if (result.getResultCode() == Activity.RESULT_OK) {
                         Intent data = result.getData();
                         if (data != null){
-                            personalDetails = data.getStringExtra("PersonalDetails");
+                            personalDetails = data.getStringArrayExtra("PersonalDetails");
                         }
                         else {
                             Log.d("personalDetailsLauncher", "Data is empty.");

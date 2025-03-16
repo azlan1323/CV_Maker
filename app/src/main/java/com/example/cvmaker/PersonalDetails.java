@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class PersonalDetails extends AppCompatActivity {
 
-    EditText etPersonalDetails;
+    EditText etNameInput, etPhoneNumber, etEmail;
     Button btnSavePersonalDetails, btnCancelPersonalDetails;
 
     @Override
@@ -33,8 +33,8 @@ public class PersonalDetails extends AppCompatActivity {
 
         btnSavePersonalDetails.setOnClickListener((v)->{
             Intent intent = new Intent();
-            if(etPersonalDetails.getText().length() != 0){
-                String str = etPersonalDetails.getText().toString();
+            if(etNameInput.getText().length() != 0 && etPhoneNumber.getText().length() != 0 && etEmail.getText().length() != 0){
+                String[] str = {etNameInput.getText().toString(), etPhoneNumber.getText().toString(), etEmail.getText().toString()};
                 intent.putExtra("PersonalDetails", str);
                 setResult(Activity.RESULT_OK, intent);
                 finish();
@@ -54,6 +54,8 @@ public class PersonalDetails extends AppCompatActivity {
     private void init(){
         btnSavePersonalDetails = findViewById(R.id.btnSavePersonalDetails);
         btnCancelPersonalDetails = findViewById(R.id.btnCancelPersonalDetails);
-        etPersonalDetails = findViewById(R.id.etPersonalDetails);
+        etNameInput = findViewById(R.id.etNameInput);
+        etEmail = findViewById(R.id.etEmail);
+        etPhoneNumber = findViewById(R.id.etPhoneNumber);
     }
 }

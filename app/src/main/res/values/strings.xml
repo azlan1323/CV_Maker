@@ -13,7 +13,7 @@
     <string name="et_enter_education_details">Enter Education Details</string>
     <string name="btn_save_details">Save Details</string>
     <string name="btn_enter_experience_details">Enter Experience Details</string>
-    <string name="btn_enter_personal_details">Enter Personal Details</string>
+    <string name="btn_enter_name">Enter Name</string>
     <string name="btn_enter_references">Enter References</string>
     <string name="btn_enter_summary">Enter Summary</string>
     <string name="btn_enter_certifications">Enter Certifications</string>
@@ -24,4 +24,6 @@
     <string name="tv_experience">Experience</string>
     <string name="tv_certifications">Certifications</string>
     <string name="tv_references">References</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="btn_enter_email">Enter Email</string>
 </resources>

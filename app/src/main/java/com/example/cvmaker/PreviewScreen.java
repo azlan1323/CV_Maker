@@ -46,7 +46,7 @@ public class PreviewScreen extends AppCompatActivity {
         String experienceDetails = intent.getStringExtra("ExperienceDetails");
         String referencesDetails = intent.getStringExtra("ReferencesDetails");
         String educationDetails = intent.getStringExtra("EducationDetails");
-        String personalDetails = intent.getStringExtra("PersonalDetails");
+        String[] personalDetails = intent.getStringArrayExtra("PersonalDetails");
 
         String str = "Summary\n" + (summaryDetails != null ? summaryDetails : "");
         tvSummary.setText(str);
@@ -63,7 +63,15 @@ public class PreviewScreen extends AppCompatActivity {
         str = "Education\n" + (educationDetails != null ? educationDetails : "");
         tvEducation.setText(str);
 
-        str = (personalDetails != null ? personalDetails : "");
-        tvPersonalDetails.setText(str);
+        if (personalDetails != null){
+            int i = 0;
+            for (String detail : personalDetails) {
+                tvPersonalDetails.setText(String.format("%s%s", tvPersonalDetails.getText(), detail));
+                if (i != personalDetails.length){
+                    tvPersonalDetails.setText(String.format("%s\n", tvPersonalDetails.getText()));
+                }
+                i++;
+            }
+        }
     }
 }
